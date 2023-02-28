@@ -1,0 +1,211 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6738705377857587949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6738705377857587947}
+  - component: {fileID: 6738705377857587948}
+  - component: {fileID: 6738705377857587946}
+  m_Layer: 0
+  m_Name: CardManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6738705377857587947
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6738705377857587949}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 510.8871, y: 280.2039, z: -5.4796395}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6738705377857587948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6738705377857587949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95b2113cd0c6d9e4ea436ab8e2d3abe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6738705377857587946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6738705377857587949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c1b2f1fd1343c4886151247f3669db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deck:
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  container:
+  - Id: 0
+    CardName: 
+    Cost: 0
+    Power: 0
+    Hp: 0
+    CardDescription: 
+    ThisImage: {fileID: 0}
+  Size: 20
+  Hand: {fileID: 0}
+  CardToHand: {fileID: 488113132602644709, guid: e1da9afcccd05314e82532a6cd0554f4, type: 3}
