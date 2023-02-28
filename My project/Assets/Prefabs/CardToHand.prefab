@@ -454,6 +454,7 @@ MonoBehaviour:
     ThisImage: {fileID: 46506940, guid: 582206e771df8dc4bb3e4f57a794c808, type: 3}
   ThisId: 0
   Id: 0
+  Cost: 0
   Power: 0
   Hp: 0
   HpText: {fileID: 488113132307639790}
@@ -488,5 +489,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c594fe078ce463e4898ed9388cae5cbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hand: {fileID: 0}
+  Hand: {fileID: 4923752958800728174, guid: fbd8fd4fa5ab2a34c817a23c032a3887, type: 3}
   CardToHandPrefab: {fileID: 488113132602644709}

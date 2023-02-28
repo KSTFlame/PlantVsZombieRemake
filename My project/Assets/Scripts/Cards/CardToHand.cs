@@ -16,5 +16,4 @@ public class CardToHand : MonoBehaviour
         CardToHandPrefab.transform.position = new Vector3(transform.position.x, transform.position.y, -48);
         CardToHandPrefab.transform.eulerAngles = new Vector3(25,0,0);
     }
-
 }

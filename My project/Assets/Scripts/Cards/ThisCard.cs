@@ -11,6 +11,7 @@ public class ThisCard : MonoBehaviour
     public int ThisId;
 
     public int Id;
+    public int Cost;
     public int Power;
     public int Hp;
 
@@ -38,12 +39,13 @@ public class ThisCard : MonoBehaviour
     void Update()
     {
         Hand = GameObject.Find("Hand");
-        if(this.transform.parent == Hand.transform.parent)
+        if (this.transform.parent == Hand.transform.parent)
         {
             CardBack = false;
         }
 
         Id = thisCard[0].Id;
+        Cost = thisCard[0].Cost;
         Power = thisCard[0].Power;
         Hp = thisCard[0].Hp;
 
@@ -56,7 +58,7 @@ public class ThisCard : MonoBehaviour
 
         StaticCardBack = CardBack;
 
-        if(this.tag == "Clone")
+        if (this.tag == "Clone")
         {
             thisCard[0] = PlayerDeck.StaticDeck[NumberOfCardInDeck - 1];
             NumberOfCardInDeck -= 1;
@@ -65,4 +67,5 @@ public class ThisCard : MonoBehaviour
             this.tag = "Untagged";
         }
     }
+
 }
