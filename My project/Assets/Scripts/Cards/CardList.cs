@@ -9,23 +9,23 @@ public class CardList : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        list.Add(new Card(0, "a1", 1, 1, 1, "normalAngel", Resources.Load<Sprite>("1"), 0));
-        list.Add(new Card(1, "a2", 1, 1, 1, "attackAngel", Resources.Load<Sprite>("1"), 1));
-        list.Add(new Card(2, "a3", 1, 1, 1, "defenseAngel", Resources.Load<Sprite>("1"), 2));
-        list.Add(new Card(3, "a4", 1, 1, 1, "spikeAngel", Resources.Load<Sprite>("1"), 3));
-        list.Add(new Card(4, "a5", 3, 3, 5, "normalAngel", Resources.Load<Sprite>("1"), 0));
-        list.Add(new Card(5, "a6", 3, 3, 5, "attackAngel", Resources.Load<Sprite>("1"), 1));
-        list.Add(new Card(6, "a7", 3, 3, 5, "defenseAngel", Resources.Load<Sprite>("1"), 2));
-        list.Add(new Card(7, "a8", 3, 3, 5, "spikeAngel", Resources.Load<Sprite>("1"), 3));
-        list.Add(new Card(8, "a9", 5, 6, 8, "normalAngel", Resources.Load<Sprite>("1"), 0));
-        list.Add(new Card(9, "a10", 5, 6, 8, "attackAngel", Resources.Load<Sprite>("1"), 1));
-        list.Add(new Card(10, "a11", 5, 6, 8, "defenseAngel", Resources.Load<Sprite>("1"), 2));
-        list.Add(new Card(11, "a12", 5, 6, 8, "spikeAngel", Resources.Load<Sprite>("1"), 3));
-        list.Add(new Card(12, "d1", 1, 1, 1, "normalDevil", Resources.Load<Sprite>("1"), 0));
+        list.Add(new Card(0, "a1", 1, 1, 1, "normalAngel", Resources.Load<Sprite>("carta angioletto giallo costo 12"), 0));
+        list.Add(new Card(1, "a2", 1, 1, 1, "attackAngel", Resources.Load<Sprite>("carta angioletto rosa costo 12"), 1));
+        list.Add(new Card(2, "a3", 1, 1, 1, "defenseAngel", Resources.Load<Sprite>("carta angioletto rosso costo 12"), 2));
+        list.Add(new Card(3, "a4", 1, 1, 1, "spikeAngel", Resources.Load<Sprite>("carta angioletto viola costo 12"), 3));
+        list.Add(new Card(4, "a5", 3, 3, 5, "normalAngel", Resources.Load<Sprite>("carta angioletto giallo costo 32"), 0));
+        list.Add(new Card(5, "a6", 3, 3, 5, "attackAngel", Resources.Load<Sprite>("carta angioletto rosa costo 32"), 1));
+        list.Add(new Card(6, "a7", 3, 3, 5, "defenseAngel", Resources.Load<Sprite>("carta angioletto rosso costo 32"), 2));
+        list.Add(new Card(7, "a8", 3, 3, 5, "spikeAngel", Resources.Load<Sprite>("carta angioletto viola costo 32"), 3));
+        list.Add(new Card(8, "a9", 5, 6, 8, "normalAngel", Resources.Load<Sprite>("carta angioletto giallo costo 52"), 0));
+        list.Add(new Card(9, "a10", 5, 6, 8, "attackAngel", Resources.Load<Sprite>("carta angioletto rosa costo 52"), 1));
+        list.Add(new Card(10, "a11", 5, 6, 8, "defenseAngel", Resources.Load<Sprite>("carta angioletto rosso costo 52"), 2));
+        list.Add(new Card(11, "a12", 5, 6, 8, "spikeAngel", Resources.Load<Sprite>("carta angioletto viola costo 52"), 3));
+        list.Add(new Card(12, "d1", 1, 1, 1, "normalDevil", Resources.Load<Sprite>("carta diavoletto giallo costo 12"), 0));
         list.Add(new Card(13, "d2", 1, 1, 1, "attackDevil", Resources.Load<Sprite>("1"), 1));
         list.Add(new Card(14, "d3", 1, 1, 1, "defenseDevil", Resources.Load<Sprite>("1"), 2));
         list.Add(new Card(15, "d4", 1, 1, 1, "spikeDevil", Resources.Load<Sprite>("1"), 3));
-        list.Add(new Card(16, "d5", 3, 3, 5, "normalDevil", Resources.Load<Sprite>("1"), 0));
+        list.Add(new Card(16, "d5", 3, 3, 5, "normalDevil", Resources.Load<Sprite>("carta diavoletto rosso costo 12"), 0));
         list.Add(new Card(17, "d6", 3, 3, 5, "attackDevil", Resources.Load<Sprite>("1"), 1));
         list.Add(new Card(18, "d7", 3, 3, 5, "defenseDevil", Resources.Load<Sprite>("1"), 2));
         list.Add(new Card(19, "d8", 3, 3, 5, "spikeDevil", Resources.Load<Sprite>("1"), 3));
