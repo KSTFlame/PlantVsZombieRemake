@@ -24,6 +24,8 @@ public class StateManager : MonoBehaviour
 
     public Text YourManaText;
     public Text EnemyManaText;
+    public Text enemyShieldText;
+    public Text YourShieldText;
 
     public GameObject WinnerManager;
     public GameObject YSummZone1;
@@ -33,6 +35,9 @@ public class StateManager : MonoBehaviour
 
     public GameObject enemyCardPrefab;
 
+    public int YourShield;
+    public int EnemyShield;
+
     public void Start()
     {
         Mana = 1;
@@ -41,6 +46,8 @@ public class StateManager : MonoBehaviour
         EnemyHp = 20;
         YourManaText.text = "/ Your Mana: " + Mana;
         EnemyManaText.text = "/ Enemy Mana: " + Mana;
+        YourShield = 0;
+        EnemyShield = 0;
         currentState = EnemyState;
         currentState.Enter(this);
 

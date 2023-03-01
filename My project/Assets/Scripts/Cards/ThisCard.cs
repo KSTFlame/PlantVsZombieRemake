@@ -14,6 +14,7 @@ public class ThisCard : MonoBehaviour
     public int Cost;
     public int Power;
     public int Hp;
+    public int totalHp;
 
     public Text HpText;
     public Text DmgText;
@@ -47,7 +48,7 @@ public class ThisCard : MonoBehaviour
         NumberOfCardInDeck = PlayerDeck.StaticSize;
 
         canBeSummon = false;
-        summoned = false;
+        summoned = false;        
     }
 
     // Update is called once per frame
@@ -59,21 +60,6 @@ public class ThisCard : MonoBehaviour
             CardBack = false;
         }
 
-        Id = thisCard[0].Id;
-        Cost = thisCard[0].Cost;
-        Power = thisCard[0].Power;
-        Hp = thisCard[0].Hp;
-        CardEffectId= thisCard[0].Effect;
-
-        ThisSprite = thisCard[0].ThisImage;
-
-        DmgText.text = "" + Power;
-        HpText.text = "" + Hp;
-
-        Image.sprite = ThisSprite;
-
-        StaticCardBack = CardBack;
-
         if (this.tag == "Clone")
         {
             thisCard[0] = PlayerDeck.StaticDeck[NumberOfCardInDeck - 1];
@@ -83,7 +69,26 @@ public class ThisCard : MonoBehaviour
             this.tag = "Untagged";
         }
 
-        if(summoned == false)
+        Id = thisCard[0].Id;
+        Cost = thisCard[0].Cost;
+        Power = thisCard[0].Power;
+        Hp = thisCard[0].Hp;
+        CardEffectId = thisCard[0].Effect;
+
+        ThisSprite = thisCard[0].ThisImage;
+
+        DmgText.text = "" + Power;
+
+        if (summoned == false)
+            HpText.text = "" + Hp;
+        else
+            HpText.text = "" + totalHp;
+
+        Image.sprite = ThisSprite;
+
+        StaticCardBack = CardBack;
+
+        if (summoned == false)
         {
             canBeSummon = true;
         } else canBeSummon= false;
@@ -123,6 +128,7 @@ public class ThisCard : MonoBehaviour
         StateManager.currentMana -= Cost;
         canBeSummon = false;
         summoned = true;
+        totalHp = Hp;
     }
 
     private IEnumerator Draw()

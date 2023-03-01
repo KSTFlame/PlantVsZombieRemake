@@ -30,12 +30,6 @@ public class EnemyTurn : State
                 Debug.Log("Turno Nemico 2: Setuppa una sua carta");
                 GameObject enemyCardPrefab = StateManager.Instantiate(state.enemyCardPrefab, state.ESummZone1.transform.position, state.ESummZone1.transform.rotation);
                 enemyCardPrefab.transform.SetParent(state.ESummZone1.transform);
-                /*state.enemyCardPrefab.transform.localScale = Vector3.one;
-                state.enemyCardPrefab.transform.position = new Vector3(state.transform.position.x, state.transform.position.y, -48);
-                state.enemyCardPrefab.transform.eulerAngles = new Vector3(25, 0, 0);*/
-                /*state.enemyCardPrefab.transform.localScale = Vector3.one;
-                state.enemyCardPrefab.transform.position = new Vector3(state.transform.position.x, state.transform.position.y, -48);
-                state.enemyCardPrefab.transform.eulerAngles = new Vector3(25, 0, 0);*/
                 break;
             case 3:
                 GameObject enemyCardPrefab2 = StateManager.Instantiate(state.enemyCardPrefab, state.ESummZone2.transform.position, state.ESummZone2.transform.rotation);
@@ -62,7 +56,6 @@ public class EnemyTurn : State
     public override void StateUpdate(StateManager state)
     {
         //L'avversario piazza in campo le sue carte in un certo ordine e poi passa il turno
-        
     }
     
     void TaskOnClick()
