@@ -14,17 +14,33 @@ public class StateManager : MonoBehaviour
     public Button YourTurnButton;
     public Button EndTurnButton;
 
+    public GameObject CardToHand;
+
     public int Mana;
-    public static int staticMana;
+    public int YourHp;
+    public int EnemyHp;
+    public static int currentMana;
     public Text YourManaText;
     public Text EnemyManaText;
 
+    public GameObject WinnerManager;
+    public GameObject YSummZone1;
+
+    public GameObject ESummZone1;
+    public GameObject enemyCardPrefab;
+    public List<GameObject> enemyCardHand; 
+
     public void Start()
     {
-        Mana = 0;
-        staticMana= Mana;
+        Mana = 1;
+        currentMana = Mana;
+        YourHp = 20;
+        EnemyHp = 20;
+        YourManaText.text = "/ Your Mana: " + Mana;
+        EnemyManaText.text = "/ Enemy Mana: " + Mana;
         currentState = EnemyState;
         currentState.Enter(this);
+
     }
 
     private void Update()

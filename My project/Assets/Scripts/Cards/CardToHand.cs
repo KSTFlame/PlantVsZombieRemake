@@ -8,7 +8,7 @@ public class CardToHand : MonoBehaviour
     public GameObject Hand;
     public GameObject CardToHandPrefab;
 
-    private void Update()
+    private void Start()
     {
         Hand = GameObject.Find("Hand");
         CardToHandPrefab.transform.SetParent(Hand.transform);

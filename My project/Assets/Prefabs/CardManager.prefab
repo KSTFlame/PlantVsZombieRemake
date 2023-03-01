@@ -64,6 +64,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   - Id: 0
     CardName: 
@@ -71,6 +72,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   - Id: 0
     CardName: 
@@ -78,6 +80,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   - Id: 0
     CardName: 
@@ -85,6 +88,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   - Id: 0
     CardName: 
@@ -92,6 +96,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   - Id: 0
     CardName: 
@@ -99,6 +104,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   - Id: 0
     CardName: 
@@ -106,6 +112,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   - Id: 0
     CardName: 
@@ -113,6 +120,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   - Id: 0
     CardName: 
@@ -120,6 +128,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   - Id: 0
     CardName: 
@@ -127,6 +136,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   - Id: 0
     CardName: 
@@ -134,6 +144,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   - Id: 0
     CardName: 
@@ -141,6 +152,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   - Id: 0
     CardName: 
@@ -148,6 +160,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   - Id: 0
     CardName: 
@@ -155,6 +168,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   - Id: 0
     CardName: 
@@ -162,6 +176,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   - Id: 0
     CardName: 
@@ -169,6 +184,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   - Id: 0
     CardName: 
@@ -176,6 +192,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   - Id: 0
     CardName: 
@@ -183,6 +200,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   - Id: 0
     CardName: 
@@ -190,6 +208,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   - Id: 0
     CardName: 
@@ -197,6 +216,7 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   container:
   - Id: 0
@@ -205,7 +225,9 @@ MonoBehaviour:
     Power: 0
     Hp: 0
     CardDescription: 
+    Effect: 0
     ThisImage: {fileID: 0}
   Size: 20
+  StartingHand: 4
   Hand: {fileID: 0}
   CardToHand: {fileID: 488113132602644709, guid: e1da9afcccd05314e82532a6cd0554f4, type: 3}

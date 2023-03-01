@@ -45,6 +45,7 @@ public class PlayerDeck : MonoBehaviour
         }
     }
 
+    /*
     public void Shuffle()
     {
         for(int i = 0; i < Size; i++)
@@ -54,5 +55,5 @@ public class PlayerDeck : MonoBehaviour
             deck[i] = deck[m_RandomIndex];
             deck[m_RandomIndex] = container[0];
         }
-    }
+    }*/
 }

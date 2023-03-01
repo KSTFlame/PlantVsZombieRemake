@@ -397,9 +397,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 488113132602644708}
+  - component: {fileID: 3570597690748672245}
+  - component: {fileID: -1415773723518651013}
   - component: {fileID: 488113132602644707}
   - component: {fileID: 488113132602644706}
   - component: {fileID: -5680696810900247527}
+  - component: {fileID: -7938226084390799861}
   m_Layer: 5
   m_Name: CardToHand
   m_TagString: Clone
@@ -432,6 +435,32 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &3570597690748672245
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488113132602644709}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &-1415773723518651013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488113132602644709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c60d6a9e5e3c548b1d92ef85ade36c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentToReturnTo: {fileID: 0}
+  placeHolderParent: {fileID: 0}
 --- !u!114 &488113132602644707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,6 +480,7 @@ MonoBehaviour:
     Power: 6
     Hp: 8
     CardDescription: spikeDevil
+    Effect: 0
     ThisImage: {fileID: 46506940, guid: 582206e771df8dc4bb3e4f57a794c808, type: 3}
   ThisId: 0
   Id: 0
@@ -462,8 +492,16 @@ MonoBehaviour:
   ThisSprite: {fileID: 0}
   Image: {fileID: 488113132256462545}
   CardBack: 0
-  Hand: {fileID: 0}
+  Hand: {fileID: 4923752958800728174, guid: fbd8fd4fa5ab2a34c817a23c032a3887, type: 3}
+  CardToHand: {fileID: 488113132602644709}
   NumberOfCardInDeck: 20
+  canBeSummon: 0
+  summoned: 0
+  battleZone1: {fileID: 3192118499290089066, guid: 3dca9d8c71ebbe94daccade29116199c, type: 3}
+  battleZone2: {fileID: 1608271216921222876, guid: c9db9da47b2d7694a8081da450eaa5e5, type: 3}
+  battleZone3: {fileID: 2181739582513999913, guid: 4e1f6e1701cc87540ab903123d4e2426, type: 3}
+  battleZone4: {fileID: 8997698245337216186, guid: b6c78ae3866fe904e825dbf50dd296cc, type: 3}
+  battleZone5: {fileID: 244708778891528541, guid: 766a8d94aa88c7f4fbf099475c1acac2, type: 3}
 --- !u!114 &488113132602644706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -491,3 +529,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hand: {fileID: 4923752958800728174, guid: fbd8fd4fa5ab2a34c817a23c032a3887, type: 3}
   CardToHandPrefab: {fileID: 488113132602644709}
+--- !u!114 &-7938226084390799861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488113132602644709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: 1
+  m_FlexibleHeight: 1
+  m_LayoutPriority: 1

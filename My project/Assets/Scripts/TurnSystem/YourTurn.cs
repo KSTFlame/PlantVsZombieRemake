@@ -24,7 +24,7 @@ public class YourTurn : State
 
     public override void StateUpdate(StateManager state)
     {
-        
+        state.YourManaText.text = "/ Your Mana: " + StateManager.currentMana;
     }
 
     void TaskOnClick()
