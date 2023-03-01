@@ -128,6 +128,7 @@ public class ThisCard : MonoBehaviour
     private IEnumerator Draw()
     {
         yield return new WaitForSeconds(1);
-        Instantiate(CardToHand, transform.position, transform.rotation);
+        if(NumberOfCardInDeck > 0)
+            Instantiate(CardToHand, transform.position, transform.rotation);
     }
 }

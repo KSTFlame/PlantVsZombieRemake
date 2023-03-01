@@ -23,7 +23,7 @@ public class NexusLifePoints : MonoBehaviour
         enemyHpText.text = "Enemy Hp: " + enemyNexusHp;
         yourHpText.text = "Your Hp: " + yourNexusHp;
 
-        if (enemyNexusHp <= 0)
+        if (enemyNexusHp <= 0 || yourNexusHp <= 0)
         {
             Application.Quit();
             Debug.Log("GGEZ");

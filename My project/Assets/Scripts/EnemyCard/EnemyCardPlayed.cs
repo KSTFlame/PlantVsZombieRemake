@@ -7,7 +7,6 @@ using UnityEngine.XR;
 public class EnemyCardPlayed : MonoBehaviour
 {
     public List<Card> thisCard = new List<Card>();
-    public List<Card> enemyDeck;
 
     public int Id;
     public int Power;
@@ -15,7 +14,6 @@ public class EnemyCardPlayed : MonoBehaviour
 
     public int NumberOfCardInDeck;
 
-    public GameObject Hand;
     public bool CardBack;
 
     public Text HpText;
@@ -30,11 +28,7 @@ public class EnemyCardPlayed : MonoBehaviour
 
     public void Update()
     {
-        Hand = GameObject.Find("EnemyHand");
-        if (this.transform.parent == Hand.transform.parent)
-        {
-            CardBack = false;
-        }
+        
         Id = thisCard[0].Id;
         Power = thisCard[0].Power;
         Hp = thisCard[0].Hp;

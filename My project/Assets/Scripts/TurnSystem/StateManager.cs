@@ -20,6 +20,8 @@ public class StateManager : MonoBehaviour
     public int YourHp;
     public int EnemyHp;
     public static int currentMana;
+    public static int enemyMana;
+
     public Text YourManaText;
     public Text EnemyManaText;
 
@@ -27,8 +29,9 @@ public class StateManager : MonoBehaviour
     public GameObject YSummZone1;
 
     public GameObject ESummZone1;
+    public GameObject ESummZone2;
+
     public GameObject enemyCardPrefab;
-    public List<GameObject> enemyCardHand; 
 
     public void Start()
     {

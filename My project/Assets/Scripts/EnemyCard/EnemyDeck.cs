@@ -14,6 +14,7 @@ public class EnemyDeck : MonoBehaviour
 
     public void Start()
     {
+
         size = 5;
         staticSize = size;
 
@@ -22,12 +23,13 @@ public class EnemyDeck : MonoBehaviour
         deck[2] = CardList.list[12];
         deck[1] = CardList.list[16];
         deck[0] = CardList.list[20];
-        StartCoroutine(StartGame());
+        //StartCoroutine(StartGame());
     }
 
     public void Update()
     {
         staticDeck = deck;
+
     }
 
     IEnumerator StartGame()
@@ -36,6 +38,7 @@ public class EnemyDeck : MonoBehaviour
         {
             yield return new WaitForSeconds(1);
             Instantiate(EnemyCard, transform.position, transform.rotation);
-        }
+        }        
     }
+
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ public class EnemyTurn : State
 {
     public Button YourTurnButton;
     private StateManager saveState;
+    private int c = 0;
 
     public override void Enter(StateManager state)
     {
@@ -16,20 +18,39 @@ public class EnemyTurn : State
         saveState = state;
         YourTurnButton = state.YourTurnButton;
         YourTurnButton.onClick.AddListener(TaskOnClick);
-        StateManager.Instantiate(state.CardToHand, state.transform.position, state.transform.rotation);
+        if (c < 14)
+        {
+            StateManager.Instantiate(state.CardToHand, state.transform.position, state.transform.rotation);
+            c++;
+        }
 
         switch (state.Mana)
         {
-            case 1:
-                
-                //StateManager.Instantiate(state.enemyCardPrefab, state.transform.position, state.transform.rotation);
-                //state.ESummZone1 = GameObject.Find("ESummZone1");
-                //state.enemyCardPrefab.transform.SetParent(state.ESummZone1.transform);
+            case 2:
+                Debug.Log("Turno Nemico 2: Setuppa una sua carta");
+                GameObject enemyCardPrefab = StateManager.Instantiate(state.enemyCardPrefab, state.ESummZone1.transform.position, state.ESummZone1.transform.rotation);
+                enemyCardPrefab.transform.SetParent(state.ESummZone1.transform);
+                /*state.enemyCardPrefab.transform.localScale = Vector3.one;
+                state.enemyCardPrefab.transform.position = new Vector3(state.transform.position.x, state.transform.position.y, -48);
+                state.enemyCardPrefab.transform.eulerAngles = new Vector3(25, 0, 0);*/
                 /*state.enemyCardPrefab.transform.localScale = Vector3.one;
                 state.enemyCardPrefab.transform.position = new Vector3(state.transform.position.x, state.transform.position.y, -48);
                 state.enemyCardPrefab.transform.eulerAngles = new Vector3(25, 0, 0);*/
                 break;
+            case 3:
+                GameObject enemyCardPrefab2 = StateManager.Instantiate(state.enemyCardPrefab, state.ESummZone2.transform.position, state.ESummZone2.transform.rotation);
+                Debug.Log("Turno Nemico 3: Setuppa un'altra carta");
+                enemyCardPrefab2.transform.SetParent(state.ESummZone2.transform);
+                break;
+            /*case 4:
+                Debug.Log("Turno Nemico 3: Setuppa un'altra carta");
+                enemyCardPrefab.transform.SetParent(state.ESummZone2.transform);
+                enemyCardPrefab.transform.SetParent(state.ESummZone1.transform);
+                break;*/
+            default: break;
         }
+
+        Exit(state);
     }
 
     public override void Exit(StateManager state)

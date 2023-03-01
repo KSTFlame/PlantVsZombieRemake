@@ -41,7 +41,8 @@ public class BattleTurn : State
 
     public override void Exit(StateManager state)
     {
-        state.Mana++;
+        if(state.Mana<10)
+           state.Mana++;
         StateManager.currentMana = state.Mana;
         EnemyTurnButton.onClick.RemoveListener(TaskOnClick);
         state.YourManaText.text = "/ Your Mana: " + state.Mana;
